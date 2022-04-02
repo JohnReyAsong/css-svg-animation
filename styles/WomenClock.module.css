@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shortHand {
+  transform-origin: 42% 41%;
+  animation: short-hand-animation 10s linear infinite;
+}
+
+@keyframes short-hand-animation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.longHand {
+  transform-origin: 41% 41%;
+  animation: long-hand-animation 5s linear infinite;
+}
+
+@keyframes long-hand-animation {
+  to {
+    transform: rotate(360deg);
+  }
+}

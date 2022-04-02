@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cuteThing {
+  animation: cute-thing-animation 0.6s alternate-reverse infinite;
+}
+
+@keyframes cute-thing-animation {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(30px, 40px);
+  }
+}
+
+.note {
+  animation: note-animation 0.6s alternate-reverse infinite;
+}
+
+@keyframes note-animation {
+  from {
+    opacity: 0%;
+    transform: translate(0);
+  }
+  to {
+    opacity: 100%;
+    transform: translate(30px, 100px);
+  }
+}
